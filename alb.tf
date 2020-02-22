@@ -5,7 +5,7 @@ resource "aws_lb" "default" {
   security_groups    = ["${aws_security_group.default_lb.id}"]
   subnets            = ["subnet-c7415ba0", "subnet-a873d9e5"]
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 
   tags = {
     Environment = "dev"
